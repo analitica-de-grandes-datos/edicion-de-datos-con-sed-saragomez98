@@ -51,3 +51,5 @@ sed 's/\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/20\3-\2-\1/g' paso6>paso7
 sed 's/\([0-9]\)\/\([0-9]\)\/\([0-9][0-9]*\)/\3-0\2-0\1/g' paso7>paso8
 sed 's/,\\N,\\N,/,\\N,\\N,\\N/g' paso8>paso9
 sed 's/,C,\\N,/,C,\\N,\\N/g' paso9>output.csv
+sed -n '1,12p' output.csv
+
